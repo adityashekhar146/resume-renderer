@@ -19,7 +19,7 @@ const SampleResumeTile = ({profile} : SampleResumeTileProps) => (
               {`${profile.personal.firstName} ${profile.personal.lastName}`}
             </Typography>
           }
-          secondary="Creator of this platform"
+          secondary="Co-Creator of this platform"
         />
       </ListItem>
     </List>
