@@ -9,7 +9,7 @@ const DownloadPanel = () => {
     <FloatPanel elevation={6}>
       <Grid container spacing={1}>
         <Grid item>
-          <IconButton component={Link} to="/home">
+          <IconButton component={Link} to="/">
             <Home fontSize="medium" color="error" />
           </IconButton>
         </Grid>

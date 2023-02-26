@@ -1,8 +1,9 @@
-import { Box, Button, Grid, Stack } from "@mui/material";
+import { Box, Button, Container, Grid, Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { getAdiResume } from "../../apis/resume";
 import useResumeStore from "../../store/resume-store";
 import HomeBanner from "./components/home-banner";
+import SampleResumeTile from "./components/sample-resume-tile";
 
 const HomePage = () => {
   const resumeStore = useResumeStore();
@@ -16,9 +17,13 @@ const HomePage = () => {
   return (
     <Stack direction="column">
       <HomeBanner />
-      <Box>
-        <Button onClick={onSampleLoad}>Check out my resume!</Button>
-      </Box>
+      <Container maxWidth="lg">
+        <Box justifyContent="center">
+          <Button onClick={onSampleLoad} variant="text">
+            <SampleResumeTile profile={getAdiResume()} />
+          </Button>
+        </Box>
+      </Container>
     </Stack>
   );
 };
