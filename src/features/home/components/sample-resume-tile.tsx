@@ -13,15 +13,13 @@ const SampleResumeTile = ({profile} : SampleResumeTileProps) => (
         <ListItemAvatar sx={{marginX: "1rem"}}>
           <Avatar src={profile.contactInfo.picture} sx={{width: "5rem", height: "5rem"}} />
         </ListItemAvatar>
-        <ListItemText
+        <ListItemText sx={{marginX: "1rem"}}
           primary={
             <Typography variant="h5" color="black">
               {`${profile.personal.firstName} ${profile.personal.lastName}`}
             </Typography>
           }
-          secondary={
-            <SimpleMarkdown children={profile.summary[0]} />
-          }
+          secondary="Creator of this platform"
         />
       </ListItem>
     </List>

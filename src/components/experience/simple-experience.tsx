@@ -1,4 +1,4 @@
-import { LocationOn } from "@mui/icons-material";
+import { CalendarMonth, LocationOn } from "@mui/icons-material";
 import { Box, List, ListItem, Stack, Typography } from "@mui/material";
 import { getMonthYear } from "../../helpers/date-helper";
 import { TenureProps } from "../../types/common";
@@ -19,12 +19,15 @@ const SimpleCompanyName = ({company}: {company: string}) => (
 );
 
 const SimpleTenure = ({startDate, endDate, isCurrentJob}: TenureProps) => (
-  <Typography variant="caption">
-    {isCurrentJob ? 
-      `Currently working since ${getMonthYear(startDate)}` : 
-      `From ${getMonthYear(startDate)} to ${getMonthYear(endDate || new Date())}`
-    }
-  </Typography>
+  <Stack direction="row" spacing={1}>
+    <CalendarMonth fontSize="small" color="primary" />
+    <Typography variant="caption">
+      {isCurrentJob ? 
+        `Currently working since ${getMonthYear(startDate)}` : 
+        `From ${getMonthYear(startDate)} to ${getMonthYear(endDate || new Date())}`
+      }
+    </Typography>
+  </Stack>
 );
 
 const SimpleLocation = ({location}: {location: string}) => (

@@ -1,7 +1,7 @@
-import { Box, Divider, Grid, Paper, Stack, Typography } from "@mui/material"
+import { Divider, Grid, Paper, Stack } from "@mui/material"
 import { useTheme } from "@mui/material";
 import SimpleEducation from "../../components/education/simple-education";
-import SimpleExperience from "../../components/experience/simple";
+import { SimpleExperience }from "../../components/experience";
 import { SimpleLanguages } from "../../components/languages";
 import { SimplePerson } from "../../components/person";
 import { SimpleSkillGroup } from "../../components/skill-group";
@@ -19,7 +19,7 @@ const BasicOne = () => {
         <SimplePerson person={personal} contactInfo={contactInfo} />
       </Grid>
       <Divider sx={{ mb: "1rem" }} />
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
         <Grid item md={8}>
           <Stack direction="column" spacing={2}>
             <SimpleSummary summary={summary} />

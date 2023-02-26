@@ -10,17 +10,17 @@ const DownloadPanel = () => {
       <Grid container spacing={1}>
         <Grid item>
           <IconButton component={Link} to="/">
-            <Home fontSize="medium" color="error" />
+            <Home fontSize="medium" color="primary" />
           </IconButton>
         </Grid>
         <Grid item>
-          <IconButton>
-            <Download fontSize="medium" color="primary" />
+          <IconButton disabled>
+            <Download fontSize="medium" />
           </IconButton>
         </Grid>
         <Grid item>
-          <IconButton>
-            <Share fontSize="medium" color="primary" />
+          <IconButton disabled>
+            <Share fontSize="medium" />
           </IconButton>
         </Grid>
       </Grid>
