@@ -3,13 +3,12 @@ import ErrorPage from "./features/error/error-page";
 import { HomePage } from "./features/home";
 import { BasicOne } from "./features/basic-resume";
 import { ResumeLayout } from "./layouts";
-import MainLayout from "./layouts/main-layout";
 
 const ARTSyRouter = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <MainLayout />,
+      element: <HomePage />,
       errorElement: <ErrorPage />,
       children: [
         {

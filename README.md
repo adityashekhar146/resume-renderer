@@ -3,7 +3,7 @@ The Resume Renderer is a purely client side application developed to allow peopl
 
 ## State of Evolution
 Right now, the application is in its infancy where we have a basic template that displays a random resume - that of the creator of this application. 
-- Build out the export functionality
+- Build out the PDF export functionality
 - This will grow to provide a user interface that accepts inputs using forms and then
 - Grow the number of templates that are available
 
